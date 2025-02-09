@@ -3,26 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strongbox - Dev Jaine Silva</title>
+    <title>Acesso Mágico</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🔥 Strongbox Phoenix 🔥</h1>
-        <p>O repositório de artefatos mais insano da galáxia!</p>
-
-        <h2>📤 Upload de Artefatos</h2>
-        <input type="file" id="fileInput">
-        <button onclick="uploadArtifact()">Enviar</button>
-
-        <h2>🔍 Buscar Artefatos</h2>
-        <input type="text" id="artifactId" placeholder="Digite o ID do artefato">
-        <button onclick="getArtifact()">Buscar</button>
-
-        <h2>📂 Resultados</h2>
-        <div id="output"></div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form>
+                <h1>Cadastro</h1>
+                <input type="text" placeholder="Nome" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <input type="password" placeholder="Confirme a senha" />
+                <button>Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form>
+                <h1>Login</h1>
+                <input type="password" id="passwordInput" placeholder="Digite a senha secreta..." />
+                <button onclick="checkPassword(event)">Acessar</button>
+                <p id="message"></p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Já tem uma conta?</h1>
+                    <p>Entre com sua senha mágica para acessar a biblioteca.</p>
+                    <button class="ghost" id="signIn">Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Bem-vindo, explorador!</h1>
+                    <p>Cadastre-se para desvendar os segredos da Biblioteca Mística.</p>
+                    <button class="ghost" id="signUp">Cadastrar</button>
+                </div>
+            </div>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
