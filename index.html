@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strongbox - Dev Jaine Silva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Strongbox Phoenix 🔥</h1>
+        <p>O repositório de artefatos mais insano da galáxia!</p>
+
+        <h2>📤 Upload de Artefatos</h2>
+        <input type="file" id="fileInput">
+        <button onclick="uploadArtifact()">Enviar</button>
+
+        <h2>🔍 Buscar Artefatos</h2>
+        <input type="text" id="artifactId" placeholder="Digite o ID do artefato">
+        <button onclick="getArtifact()">Buscar</button>
+
+        <h2>📂 Resultados</h2>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
