@@ -11,7 +11,7 @@ defmodule Strongbox.Seeds do
       password_hash: hashed_password
     })
 
-    IO.puts("🔐 Usuário padrão 'admin' criado com senha 'LUMIN' (criptografada)")
+    IO.puts("🔐 Usuário padrão 'admin' criado com senha '' (criptografada)")
   end
 end
 
